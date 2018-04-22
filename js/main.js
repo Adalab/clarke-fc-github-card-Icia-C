@@ -15,7 +15,7 @@ function checkDataLocalStorage() {
   let membersSaved = localStorage.getItem('adalab_Members');
 
   if (membersSaved === null || typeof(membersSaved) === 'undefined') {
-    getPublicMember();
+    getPublicMembers();
   }
   else {
     ALL_MEMBERS = JSON.parse(membersSaved);

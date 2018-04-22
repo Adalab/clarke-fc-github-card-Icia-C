@@ -8,7 +8,7 @@
 body {
   background: #d4cfd2 url(../img/octocat2.svg) center no-repeat;
   background-position:center -25%;
-  background-size: 35%;
+  background-size: 150%;
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ header {
 .card__section {
   position: absolute;
   width: 250px;
-  margin-top: 120px;
+  margin-top: 130px;
 }
 .adalaber__photo {
   width: 100%;
@@ -87,4 +87,29 @@ footer {
   bottom: 0;
   right: 5%;
   margin-bottom: 10px;
+}
+@media all and (min-width: 400px) {
+  body {
+    background-size: 115%;
+  }
+}
+@media all and (min-width: 500px) {
+  .card__section {
+    width: 350px;
+  }
+}
+@media all and (min-width: 600px) {
+  body {
+    background-size: 85%;
+  }
+}
+@media all and (min-width: 800px) {
+  body {
+    background-size: 50%;
+  }
+}
+@media all and (min-width: 1000px) {
+  body {
+    background-size: 30%;
+  }
 }
