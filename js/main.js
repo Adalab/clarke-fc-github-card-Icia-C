@@ -45,6 +45,14 @@ function getMembersInfo() {
       .then(function(json) {
         ALL_MEMBERS.push(json);
         saveDataLocalStorage();
+
+        // add the option to the selected
+        let select = document.getElementById("select");
+        let option = document.createElement("option");
+        option.value = i;
+        option.innerHTML = json.name || json.login;
+        select.appendChild(option);
+        select.addEventListener('change', showAdalaberCard);
       })
   }
 }
